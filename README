@@ -1,7 +1,7 @@
 Musat Mihai-Robert - 313CB 
 TEMA2 - TURNURILE DIN HANOI 
 
-================================================================================================================================================
+=============================================================================================================================
 
 Pentru a realiza aceasta tema am folosit in primul rand structurile prezente in fisierul structuri.h : structura unei liste generice asa cum ne-a fost prezentata la curs si structura unui grup de stive in care am memorat pentru fiecare grup de 3 stive culoarea, dimensiunea si numarul de mutari disponibile.
 
