@@ -1,0 +1,28 @@
+Musat Mihai-Robert - 313CB 
+TEMA2 - TURNURILE DIN HANOI 
+
+================================================================================================================================================
+
+Pentru a realiza aceasta tema am folosit in primul rand structurile prezente in fisierul structuri.h : structura unei liste generice asa cum ne-a fost prezentata la curs si structura unui grup de stive in care am memorat pentru fiecare grup de 3 stive culoarea, dimensiunea si numarul de mutari disponibile.
+
+Dintre functiile mai importante pe care le-am implementat si al caror antet se afla in header-ul functii.h amintesc : 
+
+1)insertS - functie cu ajutorul careia pot plasa intr-o stiva implementata ca o lista generica o informatie de tip void*
+2)deleteS - functie de eliberare a unei stive,analog eliberarii unei liste simplu inlantuite generice 
+3)addOrdS - functie care adauga in stiva generica informatie in mod ordonat 
+4)showS - functie care afiseaza informatia unei stive in functie de un cod (int stack  care poate fi 1,2 sau 3 pentru A,B respectiv C) dat ca parametru si de culoare 
+5)insertGr - functie care adauga ordonat informatia in una din stive din grupul de stive
+6)legalMove - functie prin care eu verific daca pot sa mut cel mai mic disc dintr-o stiva in alta stiva in limita spatiului disponibil 
+7)nextMove - functie prin care eu aplic o noua mutare unui grup de stive dat folosind functia anterioara astfel in cat numarul de mutari sa fie cel mult 2^n
+8)playGr1 - functie care simuleaza practic miscarea discurilor in functie de ceea ce intoarce functia anterioara care reprezinta un fel de codificare de la 1 la 6 corespunzator multimii permutarilor pentru cele 3 stive 
+9)copyS - functie care copiaza informatia dintr-o stiva in alta stiva folosind o stiva auxiliara asemanator copierii informatiei dintr-o lista
+generica in alta lista generica
+10)copyG - functie care copiaza structura unui grup de stive in alt grup de stive
+
+Folosind functiile descrise mai sus,dar si altele auxiliare al caror rol este evident si a fost prezentat in fisierul functii.c am implementat cele 4 operatii cerute in enuntul problemei: 
+
+11)add corespunzator solutiei mele functiei addSGr - adauga discul de dimensiune disc in stiva cu numele culoare din grupul de stive
+12)show corespunzator solutiei mele functiei showCul - afiseaza situatia curenta a sistemului Hanoi de stive care au culoarea data ca parametru
+13)play corespunzator solutiei mele functiei playG - simuleaza miscarea unui sistem Hanoi in functie de culoarea pe care o are 
+14)show_moves corespunzator solutiei mele functiei showMoves - afiseaza urmatoarele mutari ce trebuie efectuate pentru ca in sistemul Hanoi 
+de o anumita culoare sa se termine jocul 
